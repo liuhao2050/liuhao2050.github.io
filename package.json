@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && cat public/index.html",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
