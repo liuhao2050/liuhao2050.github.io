@@ -22,9 +22,9 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies 1
-        run: npm install 
+        run: npm install
       - name: Install Dependencies 2
-        run: npm install -g hexo-cli
+        run: npm run clean
       - name: Build
         run: npm run build
       - name: Deploy
